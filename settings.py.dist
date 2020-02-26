@@ -6,5 +6,3 @@ SLUG = "Instance slug"
 
 ACCESS_TOKEN = None
 
-
-
