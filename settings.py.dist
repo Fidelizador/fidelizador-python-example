@@ -1,0 +1,10 @@
+#-*- coding: utf-8 -*-
+
+CLIENTID = "your client id"
+SECRET = "your secret"
+SLUG = "Instance slug"
+
+ACCESS_TOKEN = None
+
+
+
