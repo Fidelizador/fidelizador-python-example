@@ -1,6 +1,5 @@
 #-*- coding: utf-8 -*-
 import requests
-import simplejson
 
 import config
 

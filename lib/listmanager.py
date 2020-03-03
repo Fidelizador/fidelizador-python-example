@@ -1,8 +1,8 @@
 #-*- coding: utf-8 -*-
 
 import requests
+
 import config
-import simplejson
 
 urlCreateList = "https://api.fidelizador.com/1.0/list.json"
 
