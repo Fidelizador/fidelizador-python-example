@@ -1,7 +1,12 @@
-*.pyc
-settings.py
+# folders
 __pycache__/
-.venv
+.venv/
 venv/
 ENV/
+.vscode/
+
+# files
 .cache
+*.pyc
+settings.py
+settings.cfg
