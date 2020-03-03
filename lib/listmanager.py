@@ -1,24 +1,20 @@
 #-*- coding: utf-8 -*-
 
 import requests
-import settings
+import config
 import simplejson
 
 urlCreateList = "https://api.fidelizador.com/1.0/list.json"
 
 def create_list(name):
     """ This method create a list in Fidelizador """
-    headers = { 'X-Client-Slug' : settings.SLUG, 'Authorization': "Bearer {}".format(settings.ACCESS_TOKEN) }
+    headers = {
+        'X-Client-Slug' : config.config.get('slug'),
+        'Authorization': "Bearer {}".format(config.TOKEN) }
     data = {
         'name' : name
     }
-    
-    try:
-        response = requests.post(urlCreateList, data=data, headers=headers)
-        responseText = response.text
-        responseJson = simplejson.loads(responseText)
-    except Exception:
-        return False   
-    return responseJson
 
-
+    response = requests.post(urlCreateList, data=data, headers=headers)
+    assert response.status_code == 200, 'Could not create a new list'
+    return response.json()

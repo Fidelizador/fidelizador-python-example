@@ -2,7 +2,7 @@
 
 ## Documentation
 
-This example shows how to interact with Fidelizador Api using python. 
+This example shows how to interact with Fidelizador Api using python.
 
 
 ## Installation
@@ -13,8 +13,8 @@ Clone or download the source:
 
 ```
 cd /path/to/project
-cp settings.py.dist settings.py
-``` 
+cp settings.cfg.dist settings.cfg
+```
 
 Configure your information in settings.py file.
 
@@ -23,9 +23,9 @@ Configure your information in settings.py file.
 ```
 cd /path/to/project
 python test_list.py
-``` 
+```
 
 
 ## Tests
 
-Tested on ubuntu 18.04 using python 2.7.5
+Tested on ubuntu 18.04 using python 2.7 and 3.5+
